@@ -1,0 +1,85 @@
+"ListItem": {
+    height: 44
+}
+"ListItem[android]": {
+    color: "#000"
+}
+"TextField[android]": {
+    hintTextColor: "#EFEFF4"
+}
+
+"#win": {
+    backgroundColor: "gray"
+}
+
+"#navbar": {
+    top: 0,
+    height: 64,
+    zIndex: 999,
+    backgroundColor: "#7ED321"
+}
+"#closeBtn": {
+    left: 15, bottom: 15,
+    color: "#FFF",
+    text: "\uF2D7",
+    font: { fontSize: 24, fontFamily: "Ionicons" }
+}
+"#title": {
+    bottom: 15,
+    color: "#FFF",
+    font: { fontSize: 16, fontWeight: "bold" }
+}
+
+"#map": {
+    region : {
+        latitude: 18.218025,
+        longitude: -66.461746,
+        latitudeDelta: 2,
+        longitudeDelta: 2
+    },
+    animate: true,
+    regionFit: true,
+    userLocation: true
+}
+
+
+"#input": {
+    top: 64,
+    width: "100%",
+    height: 44,
+    opacity: 0.9,
+    backgroundColor: "#FFFFFF",
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: "#000",
+    font: { fontSize: 14 },
+    returnKeyType: Titanium.UI.RETURNKEY_SEARCH,
+    clearButtonMode: Titanium.UI.INPUT_BUTTONMODE_ONFOCUS
+},
+
+"#suggestions": {
+    top: 118, left: 15, right: 15,
+    height: Ti.UI.SIZE,
+    visible: false,
+    footerTitle: null,
+    opacity: 0.9,
+    backgroundColor: "#FFFFFF",
+    zIndex: 10,
+    listSeparatorInsets: { left: 0, right: 0 }
+}
+
+".itemTitle": {
+    left: 15,
+    height: 16,
+    color: "#000",
+    font: { fontSize: 14 }
+
+}
+
+"#acceptBtn": {
+    left: 50, right: 50, bottom: 20,
+    height: 50,
+    borderRadius: 5,
+    color: "#FFF",
+    backgroundColor: "#7ED321",
+    font: { fontSize: 16, fontWeight: "bold" }
+}

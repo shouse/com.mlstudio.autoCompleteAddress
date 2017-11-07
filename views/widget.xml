@@ -1,0 +1,25 @@
+<Alloy>
+    <Window id="win" onClose="cleanup">
+        <View id="navbar">
+            <Label id="closeBtn" onClick="close"></Label>
+            <Label id="title">Buscar Direccion</Label>
+        </View>
+
+        <View id="map" userLocation="true" module="ti.map" />
+
+        <TextField id="input" onFocus="onInputFocus" onBlur="onInputBlur"/>
+
+        <ListView id="suggestions" defaultItemTemplate="default">
+            <Templates>
+                <ItemTemplate name="default">
+                    <Label class="itemTitle" bindId="title" />
+                </ItemTemplate>
+            </Templates>
+
+            <ListSection id="section">
+            </ListSection>
+        </ListView>
+
+        <Button id="acceptBtn" onClick="onAcceptBtnClick">ACEPTAR</Button>
+    </Window>
+</Alloy>
